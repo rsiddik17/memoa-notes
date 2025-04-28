@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+@import url("pages/landing.css");
+
+/* CSS variabels for reusablity across all files*/
+:root {
+    --playfair-display-font: "Playfair Display", serif;
+    --primary-color: #00A9E0;
+    --secondary-color: #40E0D0;
+    --accent-color: #FFD700;
+
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-black-matte: #2C2C2C;
+    --color-black-glosy: #1C1C1C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: var(--playfair-display-font);
+}
+
+body {
+    height: 1000vh;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-white);
+}
