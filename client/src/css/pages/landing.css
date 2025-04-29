@@ -48,8 +48,8 @@
 }
 
 .header a span {
-    color: crimson;
-    text-shadow: 0 0 5px crimson;
+    color: var(--tertiary-color);
+    text-shadow: 0 0 5px var(--tertiary-color);
 }
 
 .nav__container {
@@ -92,3 +92,92 @@
     filter: brightness(.97);
 }
 
+.hero {
+    display: flex;
+    margin-top: 5.1rem;
+    min-height: calc(100vh - 5.1rem);
+    overflow: hidden;
+}
+
+.hero__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-inline: 2rem;
+}
+
+.hero__content-info {
+    flex: 1;
+}
+
+.hero__content-up {
+    display: inline-block;
+    color: var(--color-white);
+    padding: .8rem;
+    transform: translateY(-1rem);
+    border-radius: 5px;
+    background: linear-gradient(200deg, #000, #fff, #000);
+    background-size: 600% 600%;
+    animation: moveBorder 5s ease infinite;
+    transition: transform 1s ease;
+    cursor: pointer;
+}
+
+.hero__content-up:hover {
+    box-shadow: 0 0 20px var(--tertiary-color);
+    transform: translateY(8.3rem) translateX(17.7rem);
+}
+
+.hero__content-term {
+    color: var(--color-white);
+    margin-bottom: 2rem;
+}
+
+.hero__content-term h2{
+    font-size: 3rem;
+    margin-bottom: .5rem;
+}
+
+.hero__content-term h2 .create {
+    color: var(--tertiary-color);
+}
+
+.hero__content-term h2 .easy {
+    color: var(--accent-color);
+}
+
+.hero__content-term p {
+    font-size: 1.05rem;
+    margin-top: 1rem;
+}
+
+.hero__button {
+    display: inline-block;
+    background-color: var(--color-black-matte);
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 4px;
+    transition: box-shadow .3s ease-in-out;
+    transform: translateY(.8rem);
+    cursor: pointer;
+}
+
+.hero__button:hover {
+    background-color: var(--color-black-glosy);
+    box-shadow: 0 0 20px var(--primary-color);
+}
+
+.hero__image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.hero__image img {
+    width: 480px;
+    height: 400px;
+    border-radius: 50%;
+}
