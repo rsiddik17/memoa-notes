@@ -1,4 +1,5 @@
 import LandingPage from "./pages/landing";
+import LoginPage from "./pages/login";
 
 export function router() {
     const app = document.getElementById('app');
