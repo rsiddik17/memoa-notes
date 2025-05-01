@@ -4,12 +4,6 @@ export default function LandingPage() {
   return `
       <header class="header">
         <a href="#" class="logo">Memo<span>a</span></a>
-        <nav class="nav__container">
-            <div class="nav__menu">
-              <a href="#/login" class="login-btn-link">Login</a>
-              <a href="#/signup" class="signup-btn-link">Sign Up</a>
-            </div>
-        </nav>
       </header>
 
       <section class="hero">
@@ -26,7 +20,7 @@ export default function LandingPage() {
             </div>
 
             <div class="hero__button">
-              <a href="#/login" class="started-btn">Get Started</a>
+              <a href="#/dashboard" class="started-btn">Get Started</a>
             </div>
           </div>
 
