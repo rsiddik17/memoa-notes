@@ -1,3 +1,4 @@
+/* Sidebar */
 .sidebar {
     position: fixed;
     top: 0;
@@ -193,3 +194,119 @@
   border: none !important;
 }
 
+/* Main */
+.main {
+    padding-inline: 3rem;
+    padding-block: 3rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main .header {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    padding-block: .8rem;
+}
+
+.main .header .wrapper {
+    flex-grow: 1;
+}
+
+.main .header .title {
+    margin-block-end: .5rem;
+}
+
+.main .header .text {
+    font-size: 1.2rem;
+}
+
+.main > .title {
+    margin-block: 2rem;
+}
+
+
+.card {
+    background-color: var(--color-black-glosy);
+    padding: 2rem;
+    border: 1px solid var(--color-white);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: border-color .3s ease;
+}
+
+.card:where(:hover, :focus-visible) {
+    border-color: var(--primary-color);
+}
+
+.card .card-title {
+    color: var(--primary-color);
+}
+
+.card .card-text {
+    margin-block: 1rem;
+    text-wrap: balance;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.card .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline-start: auto;
+}
+
+.card .icon-btn {
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+
+.card:where(:hover, :focus-visible) .icon-btn {
+    opacity: 1;
+}
+
+.note-list {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    align-content: flex-start;
+    align-items: stretch;
+    gap: 1rem;
+}
+
+.main .fab {
+    position: fixed;
+    bottom: 2rem;
+    right: 5rem;
+    z-index: 2;
+}
+
+.fab {
+    height: 46px;
+    max-width: max-content;
+    background-color: var(--primary-color);
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-inline: .8rem;
+    border-radius: 15px;
+    box-shadow: 0 0 10px var(--tertiary-color);
+    transition: box-shadow .3s ease;
+}
+
+.fab:hover {
+    box-shadow: 0 0 20px var(--tertiary-color);
+}
+
+.fab .text {
+    padding-inline-end: .5rem;
+}

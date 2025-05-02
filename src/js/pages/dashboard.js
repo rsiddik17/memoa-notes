@@ -2,7 +2,7 @@ import LogoImage from '../../assets/img/memoa1.png';
 
 export default function DashboardPage() {
     return`
-        <header class="sidebar active" data-sidebar>
+        <header class="sidebar" data-sidebar>
             <div class="wrapper wrapper-1">
                 <a href="/">
                     <img href="${LogoImage}" alt="logo">
@@ -59,6 +59,49 @@ export default function DashboardPage() {
             </div>
         </header>
 
-        <div class="overlay active" data-sidebar-overlay data-sidebar-toggler></div>
+        <div class="overlay" data-sidebar-overlay data-sidebar-toggler></div>
+
+        <main class="main">
+            <div class="header">
+                <div class="wrapper">
+                    <p class="title text-title-large" data-greeting>Good Morning</p>
+
+                    <span class="text text-body-medium" data-current-date>Fri, May 02 2025</span>
+                </div>
+
+                <button class="menu-btn icon-btn large" aria-label="Open menu" data-sidebar-toggler>
+                    <span class="material-symbols-rounded" aria-hidden="true">menu</span>
+
+                    <div class="state-layer"></div>
+                </button>
+            </div>
+
+            <h2 class="title text-title-medium" data-note-panel-title>My Notebook</h2>
+
+            <div class="note-list" data-note-panel>
+                <div class="card">
+                    <h3 class="card-title text-title-medium">Note title</h3>
+
+                    <p class="card-text text-body-large">Loremmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
+
+                    <div class="wrapper">
+                    <span class="card-time text-label-large">20 min ago</span>
+
+                    <button class="icon-btn large" aria-label="Delete note" data-tooltip="Delete note">
+                        <span class="material-symbols-rounded" aria-hidden="true">delete</span>
+                    </button>
+
+                    <div class="state-layer"></div>
+                </div>
+            </div>
+
+            <button class="fab" aria-label="New note" data-note-create-btn>
+                <span class="material-symbols-rounded" aria-hidden="true">add</span>
+
+                <span class="text text-label-large">New note</span>
+
+                <div class="state-layer"></div>
+            </button>
+        </main>
     `;
 }
