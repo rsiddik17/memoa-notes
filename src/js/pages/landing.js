@@ -20,7 +20,7 @@ export default function LandingPage() {
             </div>
 
             <div class="hero__button">
-              <a href="#/dashboard" class="started-btn">Get Started</a>
+              <a href="#" class="started-btn">Get Started</a>
             </div>
           </div>
 
